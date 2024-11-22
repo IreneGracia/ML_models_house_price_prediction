@@ -1,6 +1,6 @@
 This notebook utilises the Ames Housing dataset from the House Prices - Advanced Regression Techniques competition on Kaggle. From this dataset, features X and the target variable Y are extracted for analysis and modelling.
 
-Data Preparation Process
+**Data Preparation Process**
 1. Initial Data Cleaning:
     * Checked for duplicates and missing values (NaN).
     * Missing values were handled using strategies tailored to the type of feature (e.g., assigning a zero when a NaN signified the feature is absent, or mean/median/mode for numerical features).
@@ -21,7 +21,7 @@ Data Preparation Process
     * The entire data preparation process, including cleaning, scaling, encoding, and feature engineering, was consolidated into a reusable data processing pipeline.
 
 
-Modeling and Evaluation
+**Modeling and Evaluation**
 1. Model Iteration:
     * Tested a range of models to identify the best-performing one based on cross-validation using the custom RMSLE scorer.
     * Techniques to enhance performance included:
@@ -36,5 +36,6 @@ Modeling and Evaluation
     * The XGBoost Regressor with optimized hyperparameters emerged as the best-performing model based on RMSLE scores during cross-validation.
 
 
-Prediction
+**Prediction**
+
 The test dataset was processed through the data preparation pipeline and predictions were made using the best model (XGBoost). These predictions were then submitted as final house price predictions for the competition.
