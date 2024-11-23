@@ -6,7 +6,7 @@ This notebook utilises the Ames Housing dataset from the House Prices - Advanced
     * Missing values were handled using strategies tailored to the type of feature (e.g., assigning a zero when a NaN signified the feature is absent, or mean/median/mode for numerical features).
     * Identified potential erroneous values (e.g., ?, 999, "", inf, -inf) and decided to retain or remove them based on whether they were plausible values for the dataset.
 2. Feature Scaling:
-    * A scaling strategy was selected based on feature distributions and the presence of outliers.
+    * A scaling strategy was selected based on feature distributions and the presence of outliers, as well as computational demands and limitations.
 3. Feature Encoding:
     * Ordinal Encoding was applied to categorical features whose values are arranged based on a qualitative ranking.
     * Numerical Encoding was applied to numerical features.
